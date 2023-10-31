@@ -1,0 +1,46 @@
+<app-toolbar-left-customer>
+  <div class="filter-container">
+    <mat-card class="filter-card">
+      <mat-card-content>
+        <h2>Filtro Avanzado</h2>
+        <form [formGroup]="filterForm">
+          <div class="form-group">
+            <mat-form-field class="full-width">
+              <input matInput type="number" placeholder="Presupuesto" formControlName="budget">
+            </mat-form-field>
+          </div>
+
+          <div class="form-group">
+            <mat-form-field class="full-width">
+              <input matInput type="text" placeholder="Tipo" formControlName="type">
+            </mat-form-field>
+          </div>
+
+          <div class="form-group">
+            <mat-form-field class="full-width">
+              <input matInput type="text" placeholder="Software" formControlName="software">
+            </mat-form-field>
+          </div>
+
+          <button mat-raised-button color="primary" (click)="filterComputers()">Buscar</button>
+        </form>
+      </mat-card-content>
+    </mat-card>
+
+    <div class="filtered-results">
+      <h3>Resultados de la Búsqueda:</h3>
+      <div class="card-container">
+        <div *ngFor="let computer of filteredComputers" class="card">
+          <img [src]="computer.photo" alt="Computer Photo">
+          <h4>{{ computer.name }}</h4>
+          <p>Precio: ${{ computer.price }}</p>
+          <p>Tipo: {{ computer.type }}</p>
+          <p>Software: {{ computer.software }}</p>
+
+          <button mat-raised-button class="mat-primary" (click)="viewDetails(computer)">Ver Más</button>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</app-toolbar-left-customer>

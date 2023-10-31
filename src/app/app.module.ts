@@ -28,6 +28,7 @@ import { ForgotPasswordComponent } from './security/pages/forgot-password/forgot
 import { HomeComponent } from './public/home/home.component';
 import { SearchComponentsComponent } from './customer/pages/search-components/search-components.component';
 import { ComponentInformationComponent } from './customer/pages/component-information/component-information.component';
+import { AdvancedFilterComponent } from './customer/pages/advanced-filter/advanced-filter.component';
 
 @NgModule({
   declarations: [
@@ -46,7 +47,8 @@ import { ComponentInformationComponent } from './customer/pages/component-inform
     ForgotPasswordComponent,
     HomeComponent,
     SearchComponentsComponent,
-    ComponentInformationComponent
+    ComponentInformationComponent,
+    AdvancedFilterComponent
   ],
   imports: [
     HttpClientModule,
