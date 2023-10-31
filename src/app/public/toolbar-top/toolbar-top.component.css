@@ -1,0 +1,59 @@
+.mat-toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.toolbar-title {
+  margin-left: 20px; /* Ajusta el margen del título */
+  font-size: 24px; /* Tamaño de fuente del título */
+  font-weight: bold; /* Texto en negrita */
+}
+
+.toolbar-container {
+  display: flex;
+  align-items: center;
+  margin-right: 20px; /* Ajusta el margen derecho del contenedor */
+}
+
+.spacer {
+  flex: 1; /* Este elemento ocupa el espacio disponible para empujar el perfil a la derecha */
+}
+
+.profile-button-content {
+  font-size: 20px; /* Tamaño de fuente un poco más grande */
+  font-weight: bold; /* Texto en negrita */
+  cursor: pointer;
+}
+
+.menu-card {
+  background-color: #3498db; /* Fondo azul para el menú */
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  position: absolute;
+  top: 48px;
+  right: 20px;
+  z-index: 2;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  max-width: 150px; /* Ancho máximo del menú */
+  color: #fff; /* Color de texto en el menú */
+}
+
+.menu-options {
+  list-style-type: none;
+  padding: 0;
+}
+
+.menu-options li {
+  padding: 8px 16px;
+  border-bottom: 1px solid #ccc;
+  cursor: pointer;
+}
+
+.menu-options li:last-child {
+  border-bottom: none;
+}
+
+.menu-options li:hover {
+  background-color: #2980b9; /* Cambio de color al hacer hover */
+}
