@@ -9,6 +9,7 @@ import {HomeComponent} from "./public/home/home.component";
 import {SearchComponentsComponent} from "./customer/pages/search-components/search-components.component";
 import {PostsComponent} from "./seller/pages/posts/posts.component";
 import {AddPostsComponent} from "./seller/pages/add-posts/add-posts.component";
+import {ComponentInformationComponent} from "./customer/pages/component-information/component-information.component";
 
 const routes: Routes = [
   { path : 'home', component : HomeComponent },
@@ -23,6 +24,7 @@ const routes: Routes = [
 
   {path:'post',component:PostsComponent},
   {path:'add-post',component:AddPostsComponent},
+  {path: 'component-information/:id', component: ComponentInformationComponent,},
 
 
 ];

@@ -1,0 +1,47 @@
+<app-toolbar-left-customer>
+  <ng-container *ngIf="component">
+    <div class="component-info-container">
+      <h2 class="info-title">Información del Componente</h2>
+
+      <div class="component-card">
+        <div class="component-photo">
+          <img [src]="component.photo" alt="Component Photo" />
+        </div>
+        <div class="component-details">
+          <div class="component-name">
+            <strong><i class="pi pi-tag" style="font-size: 2.0rem; margin-right: 10px;"></i>{{ component.name }}</strong>
+          </div>
+          <div class="component-price">
+            <i class="pi pi-dollar"></i> Precio: ${{ component.price }}
+          </div>
+          <div class="component-date">
+            <i class="pi pi-calendar"></i> Fecha de lanzamiento: {{ component.date }}
+          </div>
+          <div class="component-manufacturer">
+            <i class="pi pi-industry"></i> Fabricante: {{ component.manufacturer }}
+          </div>
+          <div class="component-compatibility">
+            <i class="pi pi-list"></i> Compatibilidad: {{ component.compatibility }}
+          </div>
+        </div>
+      </div>
+
+      <div class="component-description-card">
+        <div class="component-description-title">Descripción</div>
+        <div class="component-description">{{ component.description }}</div>
+      </div>
+
+      <div class="button-container">
+        <button class="favorite-button" (click)="addToFavorites(component)">
+          <i class="pi pi-heart"></i> Agregar a Favoritos
+        </button>
+
+        <button class="add-to-cart-button" (click)="addToCart(component)">
+          <i class="pi pi-shopping-cart"></i> Agregar al Carrito
+        </button>
+
+
+      </div>
+    </div>
+  </ng-container>
+</app-toolbar-left-customer>

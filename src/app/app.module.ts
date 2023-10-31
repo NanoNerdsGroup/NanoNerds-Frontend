@@ -27,6 +27,7 @@ import { SignUpComponent } from './security/pages/sign-up/sign-up.component';
 import { ForgotPasswordComponent } from './security/pages/forgot-password/forgot-password.component';
 import { HomeComponent } from './public/home/home.component';
 import { SearchComponentsComponent } from './customer/pages/search-components/search-components.component';
+import { ComponentInformationComponent } from './customer/pages/component-information/component-information.component';
 
 @NgModule({
   declarations: [
@@ -44,7 +45,8 @@ import { SearchComponentsComponent } from './customer/pages/search-components/se
     SignUpComponent,
     ForgotPasswordComponent,
     HomeComponent,
-    SearchComponentsComponent
+    SearchComponentsComponent,
+    ComponentInformationComponent
   ],
   imports: [
     HttpClientModule,
