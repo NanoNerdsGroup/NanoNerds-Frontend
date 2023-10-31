@@ -1,0 +1,24 @@
+<app-toolbar-top (useToggleSideNav)="useToggle($event)"></app-toolbar-top>
+
+<mat-sidenav-container class="example-container">
+  <mat-sidenav mode="side" [opened] = "toggle">
+    <div class="image-container">
+      <div class="profile-image"></div>
+      <a routerLink="/customer-profile" mat-button>Perfil</a>
+    </div>
+
+    <div class="options-container">
+      <div class="buttons-container">
+        <a routerLink="/post" mat-button> <i class="pi pi-plus"> </i> <span>Publicaciones</span></a>
+        <a mat-button> <i class="pi pi-money-bill"> </i> <span>Ventas</span></a>
+        <a mat-button> <i class="pi pi-ticket"> </i> <span>Suscripciones</span></a>
+        <a mat-button><i class="pi pi-sign-out"></i> <span>Log out </span> </a>
+      </div>
+    </div>
+
+  </mat-sidenav>
+  <mat-sidenav-content  [style.width] = "width">
+    <ng-content></ng-content>
+  </mat-sidenav-content>
+</mat-sidenav-container>
+

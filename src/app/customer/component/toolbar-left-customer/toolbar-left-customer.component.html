@@ -1,0 +1,25 @@
+<app-toolbar-top (useToggleSideNav)="useToggle($event)"></app-toolbar-top>
+
+<mat-sidenav-container class="example-container">
+  <mat-sidenav mode="side" [opened] = "toggle">
+    <div class="image-container">
+      <div class="profile-image"></div>
+      <a routerLink="/customer-profile" mat-button>Perfil</a>
+    </div>
+
+    <div class="options-container">
+      <div class="buttons-container">
+        <a routerLink="/search-components" mat-button>Buscar</a>
+        <a mat-button>Carrito de Compras</a>
+        <a mat-button>Favoritos</a>
+        <a mat-button>Suscripciones</a>
+        <a mat-button>Filtro Avanzado</a>
+      </div>
+    </div>
+
+  </mat-sidenav>
+  <mat-sidenav-content  [style.width] = "width">
+    <ng-content></ng-content>
+  </mat-sidenav-content>
+</mat-sidenav-container>
+
