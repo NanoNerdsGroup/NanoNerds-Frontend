@@ -1,0 +1,41 @@
+<app-toolbar-left-customer>
+  <div class="p-grid p-justify-center">
+    <div class="p-col-12">
+      <h1 class="cart-title">Carrito de Compras</h1>
+    </div>
+
+    <div *ngIf="cartItems.length > 0; else emptyCart" class="p-col-12 p-md-8">
+      <div class="p-grid p-nogutter">
+        <ng-container *ngFor="let item of cartItems">
+          <div class="p-col-12 p-md-4">
+            <div class="p-card p-card-hoverable">
+              <img [src]="item.photo" alt="Component Photo" class="p-card-image" />
+              <div class="p-card-title">{{ item.name }}</div>
+              <div class="p-card-subtitle">Precio: ${{ item.price }}</div>
+              <div class="p-card-subtitle">Fecha de lanzamiento: {{ item.date }}</div>
+              <div class="p-card-subtitle">Fabricante: {{ item.manufacturer }}</div>
+              <button (click)="removeFromCart(item)" class="p-button p-button-danger p-button-rounded p-card-title">
+                <i class="pi pi-trash"></i> Eliminar
+              </button>
+            </div>
+          </div>
+        </ng-container>
+      </div>
+    </div>
+
+    <ng-template #emptyCart>
+      <div class="p-col-12 p-md-8">
+        <div class="empty-cart-message">
+          <i class="pi pi-shopping-cart-empty empty-cart-icon"></i>
+          <p>Tu carrito de compras está vacío.</p>
+        </div>
+      </div>
+    </ng-template>
+
+    <div class="p-col-12 p-md-4">
+      <button (click)="checkout()" class="p-button p-button-primary p-button-lg p-button-rounded p-button-block">
+        Realizar Compra
+      </button>
+    </div>
+  </div>
+</app-toolbar-left-customer>

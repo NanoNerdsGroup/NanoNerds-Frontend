@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import {ComponentsService} from "../../services/components.service";
+import {ShoppingCartService} from "../../services/shopping-cart.service";
 
-//import {ShoppingCartService} from "../services/shopping-cart.service";
 @Component({
   selector: 'app-component-information',
   templateUrl: './component-information.component.html',
@@ -14,7 +14,7 @@ export class ComponentInformationComponent implements OnInit {
   constructor(
     private route: ActivatedRoute,
     private componentsService: ComponentsService,
-   // private shoppingCartService: ShoppingCartService
+    private shoppingCartService: ShoppingCartService
 
   ) {}
 
@@ -47,6 +47,6 @@ export class ComponentInformationComponent implements OnInit {
 
 
   addToCart(component: any) {
-   // this.shoppingCartService.addToCart(component);
+   this.shoppingCartService.addToCart(component);
   }
 }

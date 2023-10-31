@@ -1,0 +1,93 @@
+/* Estilos para el título del carrito */
+.cart-title {
+  font-size: 1.5rem;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Estilos para el mensaje cuando el carrito está vacío */
+.empty-cart-message {
+  text-align: center;
+  padding: 30px;
+  border: 1px solid #ddd;
+  background-color: #f5f5f5;
+  border-radius: 5px;
+}
+
+.empty-cart-icon {
+  font-size: 4rem;
+  color: #aaa;
+}
+
+/* Estilos para el contenedor principal del carrito */
+.cart-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centra horizontalmente */
+}
+
+/* Estilos para los cards de los elementos en el carrito */
+.p-card {
+  display: flex;
+  flex-direction: row; /* Alinea elementos en fila */
+  align-items: center; /* Centra verticalmente */
+  justify-content: space-between; /* Alinea elementos al principio y al final del card */
+  width: 80%; /* Ancho del card */
+  background-color: #f0f0f0; /* Color de fondo del card */
+  border-radius: 10px; /* Bordes redondeados */
+  margin-bottom: 20px;
+}
+
+/* Estilos para la imagen del producto en el card */
+.p-card-image {
+  max-width: 100px;
+  height: auto;
+  border-radius: 10px 0 0 10px; /* Bordes redondeados solo a la izquierda */
+}
+
+/* Estilos para el contenido del card */
+.p-card-content {
+  padding: 10px;
+  flex: 1; /* El contenido toma el espacio restante */
+}
+
+/* Estilos para el título del producto en el card */
+.p-card-title {
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+/* Estilos para el subtítulo (puedes personalizarlo) */
+.p-card-subtitle {
+  color: #555;
+}
+
+/* Estilos para los botones en el carrito */
+.p-button {
+  background-color: #1fc4e1;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 1rem;
+  padding: 10px 20px;
+}
+
+.p-button:hover {
+  background-color: #0056b3;
+}
+
+/* Estilos para el botón de finalizar compra */
+.checkout-button {
+  display: block;
+  width: 100%;
+  margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+  /* Aplicar estilos específicos para dispositivos con ancho máximo de 768px */
+  .p-card {
+    flex-direction: column; /* Cambiar a disposición vertical */
+    text-align: center; /* Centrar el contenido horizontalmente */
+  }
+}

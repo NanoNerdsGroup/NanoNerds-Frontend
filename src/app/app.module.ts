@@ -30,6 +30,7 @@ import { SearchComponentsComponent } from './customer/pages/search-components/se
 import { ComponentInformationComponent } from './customer/pages/component-information/component-information.component';
 import { AdvancedFilterComponent } from './customer/pages/advanced-filter/advanced-filter.component';
 import { MyFavoritesComponent } from './customer/pages/my-favorites/my-favorites.component';
+import { ShoppingCartComponent } from './customer/pages/shopping-cart/shopping-cart.component';
 
 @NgModule({
   declarations: [
@@ -50,7 +51,8 @@ import { MyFavoritesComponent } from './customer/pages/my-favorites/my-favorites
     SearchComponentsComponent,
     ComponentInformationComponent,
     AdvancedFilterComponent,
-    MyFavoritesComponent
+    MyFavoritesComponent,
+    ShoppingCartComponent
   ],
   imports: [
     HttpClientModule,
