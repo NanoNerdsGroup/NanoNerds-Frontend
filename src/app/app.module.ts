@@ -17,7 +17,7 @@ import { CardPreviewPostComponent } from './seller/component/card-preview-post/c
 import { AddEditFormPostComponent } from './seller/component/add-edit-form-post/add-edit-form-post.component';
 import {MatInputModule} from "@angular/material/input";
 import {MatAutocompleteModule} from "@angular/material/autocomplete";
-import {ReactiveFormsModule} from "@angular/forms";
+import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import { AddPostsComponent } from './seller/pages/add-posts/add-posts.component';
 import { AdditionalDataProfileSellerComponent } from './seller/pages/additional-data-profile-seller/additional-data-profile-seller.component';
 import { SalesHistoryComponent } from './seller/pages/sales-history/sales-history.component';
@@ -25,6 +25,8 @@ import { SignInComponent } from './security/pages/sign-in/sign-in.component';
 import {MatCardModule} from "@angular/material/card";
 import { SignUpComponent } from './security/pages/sign-up/sign-up.component';
 import { ForgotPasswordComponent } from './security/pages/forgot-password/forgot-password.component';
+import { HomeComponent } from './public/home/home.component';
+import { SearchComponentsComponent } from './customer/pages/search-components/search-components.component';
 
 @NgModule({
   declarations: [
@@ -40,7 +42,9 @@ import { ForgotPasswordComponent } from './security/pages/forgot-password/forgot
     SalesHistoryComponent,
     SignInComponent,
     SignUpComponent,
-    ForgotPasswordComponent
+    ForgotPasswordComponent,
+    HomeComponent,
+    SearchComponentsComponent
   ],
   imports: [
     HttpClientModule,
@@ -54,7 +58,8 @@ import { ForgotPasswordComponent } from './security/pages/forgot-password/forgot
     MatInputModule,
     MatAutocompleteModule,
     ReactiveFormsModule,
-    MatCardModule
+    MatCardModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

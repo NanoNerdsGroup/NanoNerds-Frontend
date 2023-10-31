@@ -4,19 +4,49 @@
       "id": 1,
       "name": "Intel Core i7 Processor",
       "price": 299.99,
-      "photo": "https://datalockperu.com/wp-content/uploads/2023/03/Elementos-de-una-computadora-scaled-e1680206509360.jpeg"
+      "photo": "https://compuvisionperu.pe/public/img/productos/kIYEaMuAfy7TOa4MReOr1OhR6mQayzPY7ndYzNYVBWpPwjcEEqv55TN25dTtSiIQLloAyCW0ZBGLliPq.jpg",
+      "description": "El núcleo para CPU con el más alto desempeño jamás construido por Intel®, diseñado para manejar cargas de trabajo con un solo thread, threads ligeros o en ráfagas, como gaming en 4K y diseño en 3D.",
+      "date": "2009",
+      "manufacturer": "Intel",
+      "compatibility": "A estos modelos les podréis poner cualquier modelo de gráfica de gama alta que queráis, desde una AMD Radeon RX Vega 64, hasta una NVIDIA GeForce RTX 2080",
+      "type": "procesador",
+      "software": "windows"
     },
     {
       "id": 2,
       "name": "NVIDIA GeForce RTX 3080 Graphics Card",
       "price": 699.99,
-      "photo": "https://cdn.discordapp.com/attachments/891740823924903949/1162018196379938897/png-transparent-computer-cases-housings-graphics-cards-video-adapters-laptop-gaming-computer-corsair-components-desktop-pc-electronics-electronic-device-laptop-thumbnail.png?ex=653a68c7&is=6527f3c7&hm=1b0a9907311bcca1b9984459ea456d1898b7a3435fc856d0b2fe435fa79009f0&"
+      "photo": "https://cdn.discordapp.com/attachments/891740823924903949/1167503852145225909/81SzNmM27EL.png?ex=654e5db1&is=653be8b1&hm=d63ec870616bb0026cfbe553df319dad25e8c563cddcc1905f9c1cbed15e9dbb&",
+      "description": "El núcleo para CPU con el más alto desempeño jamás construido por Intel®, diseñado para manejar cargas de trabajo con un solo thread, threads ligeros o en ráfagas, como gaming en 4K y diseño en 3D.",
+      "date": "2009",
+      "manufacturer": "Intel",
+      "compatibility": "A estos modelos les podréis poner cualquier modelo de gráfica de gama alta que queráis, desde una AMD Radeon RX Vega 64, hasta una NVIDIA GeForce RTX 2080",
+      "type": "targeta grafica",
+      "software": "adobe photoshop"
     },
     {
       "id": 3,
       "name": "Corsair 16GB DDR4 RAM",
       "price": 89.99,
-      "photo": "https://cdn.discordapp.com/attachments/891740823924903949/1162018196379938897/png-transparent-computer-cases-housings-graphics-cards-video-adapters-laptop-gaming-computer-corsair-components-desktop-pc-electronics-electronic-device-laptop-thumbnail.png?ex=653a68c7&is=6527f3c7&hm=1b0a9907311bcca1b9984459ea456d1898b7a3435fc856d0b2fe435fa79009f0&"
+      "photo": "https://cdn.discordapp.com/attachments/891740823924903949/1167503541577986140/8175964127.png?ex=654e5d67&is=653be867&hm=a0912fa393fc02399d4c3dc5e920867c8e90f4dfa8f9e78cb8b88841eb14d942&",
+      "description": "El núcleo para CPU con el más alto desempeño jamás construido por Intel®, diseñado para manejar cargas de trabajo con un solo thread, threads ligeros o en ráfagas, como gaming en 4K y diseño en 3D.",
+      "date": "2009",
+      "manufacturer": "Intel",
+      "compatibility": "A estos modelos les podréis poner cualquier modelo de gráfica de gama alta que queráis, desde una AMD Radeon RX Vega 64, hasta una NVIDIA GeForce RTX 2080",
+      "type": "disco duro",
+      "software": "data storage"
+    },
+    {
+      "id": 4,
+      "name": "Corsair 16GB DDR4 RAM",
+      "price": 89.99,
+      "photo": "https://www.nvidia.com/content/dam/en-zz/Solutions/geforce/news/geforce-rtx-30-series/nvidia-geforce-rtx-3080-photo-003-850px.jpg",
+      "description": "El núcleo para CPU con el más alto desempeño jamás construido por Intel®, diseñado para manejar cargas de trabajo con un solo thread, threads ligeros o en ráfagas, como gaming en 4K y diseño en 3D.",
+      "date": "2009",
+      "manufacturer": "games",
+      "compatibility": "A estos modelos les podréis poner cualquier modelo de gráfica de gama alta que queráis, desde una AMD Radeon RX Vega 64, hasta una NVIDIA GeForce RTX 2080",
+      "type": "disco duro",
+      "software": "data storage"
     }
   ],
   "users": [
@@ -82,15 +112,15 @@
       "id": 4,
       "userId": 4,
       "product": {
-        "name": "GeForce RTX 4071",
+        "name": "GeForce RTX 4071--54",
         "amount": 20,
-        "brand": "Nvidia",
+        "brand": "Nvidia-344",
         "unitPrice": 400,
         "type": "GPU"
       },
       "date": "29/10/2023",
       "photo": "https://ripleype.imgix.net/https%3A%2F%2Fdpq25p1ucac70.cloudfront.net%2Fseller-place-files%2Fmrkl-files%2F422%2FMARKETPLACE%20INTERNACIONAL%2FOTROS%2FUF06163_1.jpg?w=750&h=555&ch=Width&auto=format&cs=strip&bg=FFFFFF&q=60&trimcolor=FFFFFF&trim=color&fit=fillmax&ixlib=js-1.1.0&s=346fc8b7f95d6028c2cd5c6ea957b2f5",
-      "description": "El mejor producto del mundo"
+      "description": "El mejor producto del mundo y "
     },
     {
       "id": 5,

@@ -1,0 +1,25 @@
+<app-toolbar-left-customer>
+  <div class="container">
+    <mat-card class="search-container">
+      <h2>Buscar Componentes</h2>
+      <mat-form-field class="search-input">
+        <input matInput placeholder="Ingrese el nombre del componente" [(ngModel)]="searchTerm" (input)="filterResults()">
+        <button mat-icon-button matSuffix>
+          <mat-icon>search</mat-icon>
+        </button>
+      </mat-form-field>
+      <h3>Componentes Disponibles</h3>
+      <div class="component-list">
+        <mat-card *ngFor="let result of filteredResults" class="component-card">
+          <img mat-card-image [src]="result.photo" alt="Component Photo">
+          <mat-card-content>
+            <div class="component-name">{{ result.name }}</div>
+            <div class="component-price">Precio: ${{ result.price }}</div>
+            <button mat-raised-button class="mat-primary" (click)="viewDetails(result)">Ver Más</button>
+
+          </mat-card-content>
+        </mat-card>
+      </div>
+    </mat-card>
+  </div>
+</app-toolbar-left-customer>

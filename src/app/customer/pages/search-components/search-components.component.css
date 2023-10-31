@@ -1,0 +1,84 @@
+.container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; /* Permite que las cards fluyan en varias filas */
+  width: 80%;
+  margin-top: 20px;
+}
+
+.search-container {
+  max-width: 600px;
+  padding: 20px;
+  text-align: center;
+  position: relative;
+  width: 100%;
+}
+
+app-toolbar-left-customer {
+  width: 100%;
+}
+
+.search-input {
+  width: 100%;
+}
+
+.component-list {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap; /* Asegura que las cards se muestren en varias filas */
+  justify-content: space-between; /* Espaciado uniforme entre las cards */
+}
+
+.component-card {
+  background-color: rgb(255, 255, 255);
+  color: #090101;
+  margin: 0 0 20px 0; /* Márgenes ajustados para crear espacio entre las tarjetas */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  width: calc(50% - 20px); /* Ajusta el ancho para que se muestren en dos filas */
+}
+
+.component-card img {
+  max-width: 100%;
+  height: auto;
+}
+
+.component-card mat-card-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.component-name {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.component-price {
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+button {
+  background-color: #fff;
+  color: #007bff;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+button:hover {
+  background-color: #007bff;
+  color: #fff;
+}
+
+@media (max-width: 768px) {
+  .search-container {
+    margin: 0;
+    width: 100%;
+  }
+
+  .component-card {
+    width: 100%; /* En dispositivos más pequeños, muestra una tarjeta por fila */
+  }
+}
