@@ -23,6 +23,7 @@ import { AdditionalDataProfileSellerComponent } from './seller/pages/additional-
 import { SalesHistoryComponent } from './seller/pages/sales-history/sales-history.component';
 import { SignInComponent } from './security/pages/sign-in/sign-in.component';
 import {MatCardModule} from "@angular/material/card";
+import { SignUpComponent } from './security/pages/sign-up/sign-up.component';
 
 @NgModule({
   declarations: [
@@ -36,7 +37,8 @@ import {MatCardModule} from "@angular/material/card";
     AddPostsComponent,
     AdditionalDataProfileSellerComponent,
     SalesHistoryComponent,
-    SignInComponent
+    SignInComponent,
+    SignUpComponent
   ],
   imports: [
     HttpClientModule,

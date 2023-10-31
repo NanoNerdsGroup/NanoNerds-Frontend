@@ -1,0 +1,28 @@
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.signup-card {
+  width: 300px;
+  padding: 20px;
+  margin-right: 150px;
+}
+
+.image-container {
+  flex: 1;
+  padding: 20px;
+}
+
+.image-container img {
+  max-width: 90%;
+  height: auto;
+}
+
+.signup-container {
+  flex: 1;
+  padding: 20px;
+}

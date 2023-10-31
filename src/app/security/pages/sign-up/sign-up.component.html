@@ -1,0 +1,93 @@
+<div class="container">
+  <div class="image-container">
+    <img src="https://datalockperu.com/wp-content/uploads/2023/03/Elementos-de-una-computadora-scaled-e1680206509360.jpeg" alt="Imagen de computadora" />
+  </div>
+
+  <mat-card class="signup-card">
+    <mat-card-title>Sign Up</mat-card-title>
+    <form [formGroup]="signUpForm">
+      <div>
+        <mat-form-field>
+          <mat-label>First Name</mat-label>
+          <input
+            matInput
+            placeholder="John"
+            formControlName="firstName"
+            required
+          />
+        </mat-form-field>
+      </div>
+
+      <div>
+        <mat-form-field>
+          <mat-label>Last Name</mat-label>
+          <input
+            matInput
+            placeholder="Doe"
+            formControlName="lastName"
+            required
+          />
+        </mat-form-field>
+      </div>
+
+      <div>
+        <mat-form-field>
+          <mat-label>Email</mat-label>
+          <input
+            matInput
+            placeholder="user@domain.com"
+            formControlName="email"
+            required
+          />
+        </mat-form-field>
+      </div>
+
+      <div>
+        <mat-form-field>
+          <mat-label>Phone Number</mat-label>
+          <input
+            matInput
+            placeholder="+51"
+            formControlName="phoneNumber"
+            required
+          />
+        </mat-form-field>
+      </div>
+
+      <div>
+        <mat-form-field>
+          <mat-label>Password</mat-label>
+          <input
+            type="password"
+            matInput
+            placeholder="Create your password"
+            formControlName="password"
+            required
+          />
+        </mat-form-field>
+      </div>
+
+      <div>
+        <mat-form-field>
+          <mat-label>Confirm Password</mat-label>
+          <input
+            type="password"
+            matInput
+            placeholder="Confirm your password"
+            formControlName="confirmPassword"
+            required
+          />
+        </mat-form-field>
+      </div>
+    </form>
+
+    <mat-card-actions align="end">
+      <button mat-button class="material-button" (click)="signUp()">Sign Up</button>
+    </mat-card-actions>
+
+    <div class="additional-links">
+      ¿Ya tienes una cuenta? <a routerLink="/sign-in">Sign in.</a>
+    </div>
+
+  </mat-card>
+</div>
