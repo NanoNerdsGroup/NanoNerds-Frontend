@@ -1,0 +1,6 @@
+<app-toolbar-left-seller>
+  <div class="container-post-page">
+    <a mat-button> <i class="pi pi-plus"> </i> <span>Agregar publicación</span></a>
+    <app-card-preview-post  (deleteClicked)="onDeleteItem($event)" *ngFor="let post of dataSource" [data]="post"></app-card-preview-post>
+  </div>
+</app-toolbar-left-seller>

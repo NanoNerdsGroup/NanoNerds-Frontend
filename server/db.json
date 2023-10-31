@@ -1,0 +1,110 @@
+{
+  "components": [
+    {
+      "id": 1,
+      "name": "Intel Core i7 Processor",
+      "price": 299.99,
+      "photo": "https://datalockperu.com/wp-content/uploads/2023/03/Elementos-de-una-computadora-scaled-e1680206509360.jpeg"
+    },
+    {
+      "id": 2,
+      "name": "NVIDIA GeForce RTX 3080 Graphics Card",
+      "price": 699.99,
+      "photo": "https://cdn.discordapp.com/attachments/891740823924903949/1162018196379938897/png-transparent-computer-cases-housings-graphics-cards-video-adapters-laptop-gaming-computer-corsair-components-desktop-pc-electronics-electronic-device-laptop-thumbnail.png?ex=653a68c7&is=6527f3c7&hm=1b0a9907311bcca1b9984459ea456d1898b7a3435fc856d0b2fe435fa79009f0&"
+    },
+    {
+      "id": 3,
+      "name": "Corsair 16GB DDR4 RAM",
+      "price": 89.99,
+      "photo": "https://cdn.discordapp.com/attachments/891740823924903949/1162018196379938897/png-transparent-computer-cases-housings-graphics-cards-video-adapters-laptop-gaming-computer-corsair-components-desktop-pc-electronics-electronic-device-laptop-thumbnail.png?ex=653a68c7&is=6527f3c7&hm=1b0a9907311bcca1b9984459ea456d1898b7a3435fc856d0b2fe435fa79009f0&"
+    }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "firstName": "John",
+      "lastName": "Doe",
+      "email": "user@domain.com",
+      "phoneNumber": "95587",
+      "password": "password123"
+    },
+    {
+      "email": "A@gmail.com",
+      "password": "$2a$10$c8S1FPayf12qjIYAMeUPd.wzAQnKlbRYHfQiI.RUb7tOsdBrc4kDW",
+      "id": 2,
+      "firstName": "Antonella",
+      "lastName": "Gom",
+      "phoneNumber": "963546789"
+    },
+    {
+      "email": "H@gmail.com",
+      "password": "$2a$10$iEB2TXriEUshngG0lFhx1.inZO88zFekMxiOJvPd/xVt6VtsiAlnq",
+      "id": 8,
+      "firstName": "JHON",
+      "lastName": "Doe",
+      "phoneNumber": "987654345"
+    },
+    {
+      "email": "n@gmail.com",
+      "password": "$2a$10$qoX7YvQJL4DIFoISMtRNjeqtedganEFBt8vnOs8QQZ2zfY.aslAHO",
+      "id": 9,
+      "firstName": "Ana",
+      "lastName": "G",
+      "phoneNumber": "985876467"
+    },
+    {
+      "email": "D@gmail.com",
+      "password": "$2a$10$oKKhxedbV2k4OggCUyVlqe.DtE/N81VYeptr7KPbCsAcLvDBtmye.",
+      "id": 3,
+      "firstName": "Andre",
+      "lastName": "fre",
+      "phoneNumber": "984647744"
+    },
+    {
+      "email": "hola@hotmail.com",
+      "password": "$2a$10$ydpQBRcgGLCujZPf9DEvXeDeAiCwHp8dvMf6CArmLSVfKntVcpf2y",
+      "id": 4,
+      "firstName": "Orlando",
+      "lastName": "Roca",
+      "phoneNumber": "982917848"
+    },
+    {
+      "email": "auto@h.com",
+      "password": "$2a$10$gCylhKO55496WUE7F4KMiuVQhb0S5/YBuzy0jjunF7Kjh8wC5Z7M6",
+      "id": 5,
+      "firstName": "yo",
+      "lastName": "yo",
+      "phoneNumber": "948498"
+    }
+  ],
+  "posts": [
+    {
+      "id": 4,
+      "userId": 4,
+      "product": {
+        "name": "GeForce RTX 4071",
+        "amount": 20,
+        "brand": "Nvidia",
+        "unitPrice": 400,
+        "type": "GPU"
+      },
+      "date": "29/10/2023",
+      "photo": "https://ripleype.imgix.net/https%3A%2F%2Fdpq25p1ucac70.cloudfront.net%2Fseller-place-files%2Fmrkl-files%2F422%2FMARKETPLACE%20INTERNACIONAL%2FOTROS%2FUF06163_1.jpg?w=750&h=555&ch=Width&auto=format&cs=strip&bg=FFFFFF&q=60&trimcolor=FFFFFF&trim=color&fit=fillmax&ixlib=js-1.1.0&s=346fc8b7f95d6028c2cd5c6ea957b2f5",
+      "description": "El mejor producto del mundo"
+    },
+    {
+      "id": 5,
+      "userId": 4,
+      "product": {
+        "name": "Intel i9 procesador",
+        "amount": 15,
+        "brand": "Intel",
+        "unitPrice": 2000,
+        "type": "CPU"
+      },
+      "date": "29/10/2023",
+      "description": "El mejor procesador",
+      "photo": "https://leasein.pe/wp-content/uploads/2021/08/Intel-Core-i9-2.jpg"
+    }
+  ]
+}

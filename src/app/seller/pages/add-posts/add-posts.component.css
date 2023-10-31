@@ -1,0 +1,11 @@
+.container-add-post-page {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.button-goback{
+  position:absolute;
+  left: 5px;
+}
