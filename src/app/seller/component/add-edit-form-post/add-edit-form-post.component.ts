@@ -81,6 +81,7 @@ export class AddEditFormPostComponent implements OnInit{
   }
 
   validatePostFromForm(){
+    console.log(this.formAddComponent.valid)
     if(this.formAddComponent.valid){
       if (this.addEditService.modeEdit){
         this.componentData.photo = this.formAddComponent.get('photo')?.value;
@@ -103,7 +104,6 @@ export class AddEditFormPostComponent implements OnInit{
           manufacturer: this.formAddComponent.get('manufacturer')?.value,
           type: this.formAddComponent.get('type')?.value,
           amount: this.formAddComponent.get('amount')?.value,
-
         })
       }
     }
