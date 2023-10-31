@@ -24,6 +24,7 @@ import { SalesHistoryComponent } from './seller/pages/sales-history/sales-histor
 import { SignInComponent } from './security/pages/sign-in/sign-in.component';
 import {MatCardModule} from "@angular/material/card";
 import { SignUpComponent } from './security/pages/sign-up/sign-up.component';
+import { ForgotPasswordComponent } from './security/pages/forgot-password/forgot-password.component';
 
 @NgModule({
   declarations: [
@@ -38,7 +39,8 @@ import { SignUpComponent } from './security/pages/sign-up/sign-up.component';
     AdditionalDataProfileSellerComponent,
     SalesHistoryComponent,
     SignInComponent,
-    SignUpComponent
+    SignUpComponent,
+    ForgotPasswordComponent
   ],
   imports: [
     HttpClientModule,
