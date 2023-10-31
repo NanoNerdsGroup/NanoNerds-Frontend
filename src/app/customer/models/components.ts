@@ -9,7 +9,7 @@ export class Component {
   compatibility: string;
   type: string;
   software: string;
-
+  amount: number;
 
   constructor() {
     this.id = 0.0;
@@ -22,7 +22,6 @@ export class Component {
     this.compatibility = '';
     this.type = '';
     this.software = '';
-
-
+    this.amount=0;
   }
 }

@@ -5,12 +5,13 @@
       "name": "Intel Core i7 Processor",
       "price": 299.99,
       "photo": "https://compuvisionperu.pe/public/img/productos/kIYEaMuAfy7TOa4MReOr1OhR6mQayzPY7ndYzNYVBWpPwjcEEqv55TN25dTtSiIQLloAyCW0ZBGLliPq.jpg",
-      "description": "El núcleo para CPU con el más alto desempeño jamás construido por Intel®, diseñado para manejar cargas de trabajo con un solo thread, threads ligeros o en ráfagas, como gaming en 4K y diseño en 3D.",
+      "description": "El núcleo para CPU con el más alto desempeño jamás construido por Intel®, diseñado para manejar cargas de trabajo con un solo thread, threads ligeros o en ráfagas, como gaming en 4K y diseño en 3D. No lo compren ",
       "date": "2009",
       "manufacturer": "Intel",
       "compatibility": "A estos modelos les podréis poner cualquier modelo de gráfica de gama alta que queráis, desde una AMD Radeon RX Vega 64, hasta una NVIDIA GeForce RTX 2080",
       "type": "procesador",
-      "software": "windows"
+      "software": "windows",
+      "amount": 15
     },
     {
       "id": 2,

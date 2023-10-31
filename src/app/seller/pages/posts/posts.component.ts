@@ -1,5 +1,4 @@
 import {Component, OnInit} from '@angular/core';
-import {Post} from "../../model/post/post";
 import {PostsService} from "../../services/posts/posts.service";
 import {Router} from "@angular/router";
 import {AddEditPostService} from "../../services/add-edit-post/add-edit-post.service";
@@ -10,22 +9,22 @@ import {AddEditPostService} from "../../services/add-edit-post/add-edit-post.ser
   styleUrls: ['./posts.component.css']
 })
 export class PostsComponent implements OnInit{
-  postData: Post;
-  dataSource: Post[]
+  componentData: any;
+  dataSource: any[]
   isEditMode:boolean=false;
 
   constructor(private postsService: PostsService, public addEditService: AddEditPostService
     , private route: Router) {
-    this.postData = {} as Post;
+    this.componentData = {} as any;
     this.dataSource=[];
   }
 
   private resetEditState(){
     this.isEditMode = false;
-    this.postData = {} as Post;
+    this.componentData = {} as any;
   }
 
-  private getAllPost(){
+  private getAllComponent(){
     this.postsService.getAll().subscribe((response: any)=>{
       this.dataSource = response;
     })
@@ -33,9 +32,9 @@ export class PostsComponent implements OnInit{
 
 
 
-  private deletePost(id: number) {
+  private deleteComponent(id: number) {
     this.postsService.delete(id).subscribe(() => {
-      this.dataSource = this.dataSource.filter((o: Post) => {
+      this.dataSource = this.dataSource.filter((o: any) => {
         return o.id !== id ? o : false
       });
     });
@@ -45,11 +44,11 @@ export class PostsComponent implements OnInit{
 
   onCancelEdit() {
     this.isEditMode = false;
-    this.getAllPost();
+    this.getAllComponent();
   }
 
-  onDeleteItem(element: Post) {
-    this.deletePost(element.id);
+  onDeleteItem(element: any) {
+    this.deleteComponent(element.id);
   }
 
   onAddClick(){
@@ -58,6 +57,6 @@ export class PostsComponent implements OnInit{
   }
 
   ngOnInit(): void {
-    this.getAllPost();
+    this.getAllComponent();
   }
 }

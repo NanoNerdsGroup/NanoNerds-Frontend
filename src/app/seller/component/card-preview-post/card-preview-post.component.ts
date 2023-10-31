@@ -1,5 +1,4 @@
 import {Component, EventEmitter, Input, Output} from '@angular/core';
-import {Post} from "../../model/post/post";
 import {Router} from "@angular/router";
 import {AddEditPostService} from "../../services/add-edit-post/add-edit-post.service";
 
@@ -9,19 +8,19 @@ import {AddEditPostService} from "../../services/add-edit-post/add-edit-post.ser
   styleUrls: ['./card-preview-post.component.css']
 })
 export class CardPreviewPostComponent {
-  @Input('data') post!: Post;
-  @Output() deleteClicked = new EventEmitter<Post>();
+  @Input('data') component!: any;
+  @Output() deleteClicked = new EventEmitter<any>();
 
   constructor(public router: Router, public addEditService: AddEditPostService) {
   }
 
   onDeleteClick(): void {
-    this.deleteClicked.emit(this.post);
+    this.deleteClicked.emit(this.component);
   }
 
   onUpdateClick(){
     this.addEditService.modeEdit = true;
-    localStorage.setItem('current-post', JSON.stringify(this.post))
+    localStorage.setItem('current-post', JSON.stringify(this.component))
     this.router.navigate(['/add-post']);
   }
 }
