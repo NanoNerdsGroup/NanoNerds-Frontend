@@ -21,6 +21,8 @@ import {ReactiveFormsModule} from "@angular/forms";
 import { AddPostsComponent } from './seller/pages/add-posts/add-posts.component';
 import { AdditionalDataProfileSellerComponent } from './seller/pages/additional-data-profile-seller/additional-data-profile-seller.component';
 import { SalesHistoryComponent } from './seller/pages/sales-history/sales-history.component';
+import { SignInComponent } from './security/pages/sign-in/sign-in.component';
+import {MatCardModule} from "@angular/material/card";
 
 @NgModule({
   declarations: [
@@ -33,7 +35,8 @@ import { SalesHistoryComponent } from './seller/pages/sales-history/sales-histor
     AddEditFormPostComponent,
     AddPostsComponent,
     AdditionalDataProfileSellerComponent,
-    SalesHistoryComponent
+    SalesHistoryComponent,
+    SignInComponent
   ],
   imports: [
     HttpClientModule,
@@ -46,7 +49,8 @@ import { SalesHistoryComponent } from './seller/pages/sales-history/sales-histor
     MatButtonModule,
     MatInputModule,
     MatAutocompleteModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    MatCardModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,0 +1,51 @@
+<div class="container">
+  <div class="image-container">
+    <img src="https://datalockperu.com/wp-content/uploads/2023/03/Elementos-de-una-computadora-scaled-e1680206509360.jpeg" alt="Imagen de computadora" />
+  </div>
+
+  <mat-card class="signin-card">
+    <mat-card-title>Sign In</mat-card-title>
+    <form [formGroup]="signInForm">
+      <div>
+        <mat-form-field>
+          <mat-label>Email</mat-label>
+          <input
+            matInput
+            placeholder="user@domain.com"
+            formControlName="email"
+            required
+          />
+        </mat-form-field>
+      </div>
+
+      <div>
+        <mat-form-field>
+          <mat-label>Password</mat-label>
+          <input
+            type="password"
+            matInput
+            placeholder="Enter your password"
+            formControlName="password"
+            required
+          />
+        </mat-form-field>
+      </div>
+    </form>
+
+    <div class="additional-links">
+      <a [routerLink]="'/forgot-password'">Olvidó su contraseña?</a>
+    </div>
+    <div class="additional-links">
+      ¿Aún no tiene una cuenta? <a [routerLink]="'/sign-up'">Crear una.</a>
+    </div>
+
+    <div *ngIf="errorMessage" class="error-message">
+      {{ errorMessage }}
+    </div>
+
+
+    <mat-card-actions align="end">
+      <button mat-button class="material-button" (click)="signIn()">Sign In</button>
+    </mat-card-actions>
+  </mat-card>
+</div>

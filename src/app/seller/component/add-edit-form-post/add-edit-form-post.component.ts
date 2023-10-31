@@ -3,6 +3,7 @@ import {FormBuilder, FormGroup, Validators} from "@angular/forms";
 import {Post} from "../../model/post/post";
 import {PostsService} from "../../services/posts/posts.service";
 import {AddEditPostService} from "../../services/add-edit-post/add-edit-post.service";
+import {UserEntity} from "../../../security/model/user.entity";
 
 @Component({
   selector: 'app-add-edit-form-post',
