@@ -11,6 +11,7 @@ import {PostsComponent} from "./seller/pages/posts/posts.component";
 import {AddPostsComponent} from "./seller/pages/add-posts/add-posts.component";
 import {ComponentInformationComponent} from "./customer/pages/component-information/component-information.component";
 import {AdvancedFilterComponent} from "./customer/pages/advanced-filter/advanced-filter.component";
+import {MyFavoritesComponent} from "./customer/pages/my-favorites/my-favorites.component";
 
 const routes: Routes = [
   { path : 'home', component : HomeComponent },
@@ -27,6 +28,7 @@ const routes: Routes = [
   {path:'add-post',component:AddPostsComponent},
   {path: 'component-information/:id', component: ComponentInformationComponent,},
   {path:'advance-filter',component:AdvancedFilterComponent},
+  {path:'my-favorites', component:MyFavoritesComponent},
 
 
 ];

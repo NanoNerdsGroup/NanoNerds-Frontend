@@ -29,6 +29,7 @@ import { HomeComponent } from './public/home/home.component';
 import { SearchComponentsComponent } from './customer/pages/search-components/search-components.component';
 import { ComponentInformationComponent } from './customer/pages/component-information/component-information.component';
 import { AdvancedFilterComponent } from './customer/pages/advanced-filter/advanced-filter.component';
+import { MyFavoritesComponent } from './customer/pages/my-favorites/my-favorites.component';
 
 @NgModule({
   declarations: [
@@ -48,7 +49,8 @@ import { AdvancedFilterComponent } from './customer/pages/advanced-filter/advanc
     HomeComponent,
     SearchComponentsComponent,
     ComponentInformationComponent,
-    AdvancedFilterComponent
+    AdvancedFilterComponent,
+    MyFavoritesComponent
   ],
   imports: [
     HttpClientModule,

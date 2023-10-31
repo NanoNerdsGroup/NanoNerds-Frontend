@@ -1,0 +1,32 @@
+<app-toolbar-left-customer>
+  <div class="p-col-12">
+    <h1 class="favorite-title">Mis Favoritos</h1>
+  </div>
+  <div *ngIf="favoriteComponents.length > 0; else noFavorites" class="p-col-12 p-md-8">
+    <div class="p-grid p-nogutter">
+      <ng-container *ngFor="let component of favoriteComponents">
+        <div class="p-col-12 p-md-4">
+          <div class="p-card p-card-hoverable favorite-component">
+            <img [src]="component.photo" alt="Component Photo" class="p-card-image" />
+            <div class="p-card-title">{{ component.name }}</div>
+            <div class="p-card-subtitle">Precio: ${{ component.price }}</div>
+            <div class="p-card-subtitle">Fecha de lanzamiento: {{ component.date }}</div>
+            <div class="p-card-subtitle">Fabricante: {{ component.manufacturer }}</div>
+            <div class="p-card-subtitle">Compatibilidad: {{ component.compatibility }}</div>
+            <button (click)="removeFromFavorites(component)" class="p-button p-button-danger">
+              <i class="pi pi-trash"></i> Eliminar
+            </button>
+          </div>
+        </div>
+      </ng-container>
+    </div>
+  </div>
+  <ng-template #noFavorites>
+    <div class="p-col-12 p-md-8">
+      <div class="empty-favorites-message">
+        <i class="pi pi-star-empty empty-favorites-icon"></i>
+        <p>No tienes componentes guardados en favoritos.</p>
+      </div>
+    </div>
+  </ng-template>
+</app-toolbar-left-customer>
