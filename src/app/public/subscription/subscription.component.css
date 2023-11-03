@@ -1,3 +1,4 @@
+/* Estilos generales */
 .payment-container {
   display: flex;
   flex-direction: column;
@@ -77,12 +78,8 @@ mat-error {
   color: #007bff;
 }
 
-/* Estilo para los bordes de los campos con foco */
-.mat-focused .mat-form-field-underline {
-  background-color: #007bff;
-}
-
-/* Estilo para el icono en el campo de "Número de Tarjeta" */
-.mat-icon {
-  color: #007bff;
+/* Estilo para las imágenes con zoom */
+.subscription-card-image.image-zoom {
+  max-width: 20%;
+  height: auto;
 }

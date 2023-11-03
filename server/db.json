@@ -108,6 +108,14 @@
       "firstName": "yo",
       "lastName": "yo",
       "phoneNumber": "948498"
+    },
+    {
+      "email": "pepito@gmail.com",
+      "password": "$2a$10$LsVTnckghp4B8ead7x.4GeW3EknQW8eqJaWPanK9pL9RIfmPN/ZX.",
+      "id": 6,
+      "firstName": "pepe",
+      "lastName": "pep",
+      "phoneNumber": "924555111"
     }
   ]
 }
