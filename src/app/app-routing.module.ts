@@ -13,6 +13,7 @@ import {ComponentInformationComponent} from "./customer/pages/component-informat
 import {AdvancedFilterComponent} from "./customer/pages/advanced-filter/advanced-filter.component";
 import {MyFavoritesComponent} from "./customer/pages/my-favorites/my-favorites.component";
 import {ShoppingCartComponent} from "./customer/pages/shopping-cart/shopping-cart.component";
+import {SubscriptionComponent} from "./public/subscription/subscription.component";
 
 const routes: Routes = [
   { path : 'home', component : HomeComponent },
@@ -31,6 +32,8 @@ const routes: Routes = [
   {path:'advance-filter',component:AdvancedFilterComponent},
   {path:'my-favorites', component:MyFavoritesComponent},
   {path:'shopping-cart',component:ShoppingCartComponent},
+  {path:'subscription',component:SubscriptionComponent},
+
 
 
 ];

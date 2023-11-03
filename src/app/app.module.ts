@@ -31,6 +31,7 @@ import { ComponentInformationComponent } from './customer/pages/component-inform
 import { AdvancedFilterComponent } from './customer/pages/advanced-filter/advanced-filter.component';
 import { MyFavoritesComponent } from './customer/pages/my-favorites/my-favorites.component';
 import { ShoppingCartComponent } from './customer/pages/shopping-cart/shopping-cart.component';
+import { SubscriptionComponent } from './public/subscription/subscription.component';
 
 @NgModule({
   declarations: [
@@ -52,7 +53,8 @@ import { ShoppingCartComponent } from './customer/pages/shopping-cart/shopping-c
     ComponentInformationComponent,
     AdvancedFilterComponent,
     MyFavoritesComponent,
-    ShoppingCartComponent
+    ShoppingCartComponent,
+    SubscriptionComponent
   ],
   imports: [
     HttpClientModule,

@@ -1,0 +1,88 @@
+.payment-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px;
+  padding: 20px;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  max-width: 400px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.full-width {
+  width: 100%;
+  margin: 8px 0;
+}
+
+.half-width {
+  width: 48%;
+  margin: 8px 0;
+}
+
+.expiration-cvc {
+  display: flex;
+  justify-content: space-between;
+  margin: 8px 0;
+}
+
+button {
+  margin: 16px 0;
+}
+
+/* Estilo para el botón "Pagar" */
+button {
+  background-color: #007bff;
+  color: #fff;
+  font-weight: bold;
+  padding: 12px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Estilo para los campos de entrada de texto */
+mat-form-field {
+  width: 100%;
+  margin-bottom: 12px;
+}
+
+/* Estilo para el título "Detalles de Pago" */
+h2 {
+  color: #007bff;
+  font-size: 24px;
+  margin-bottom: 16px;
+}
+
+/* Estilo para los mensajes de error */
+mat-error {
+  color: #f44336; /* Rojo */
+}
+
+/* Estilo para el borde de los campos con errores */
+.mat-form-field-invalid .mat-input {
+  border-color: #f44336;
+}
+
+/* Estilo para los campos de entrada de texto con foco */
+.mat-focused .mat-form-field-label {
+  color: #007bff;
+}
+
+/* Estilo para los bordes de los campos con foco */
+.mat-focused .mat-form-field-underline {
+  background-color: #007bff;
+}
+
+/* Estilo para el icono en el campo de "Número de Tarjeta" */
+.mat-icon {
+  color: #007bff;
+}
