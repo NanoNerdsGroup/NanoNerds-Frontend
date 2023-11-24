@@ -5,44 +5,34 @@
 
   <mat-card class="signin-card">
     <mat-card-title>Sign In</mat-card-title>
+
     <form [formGroup]="signInForm">
-      <div>
+      <div class="form-field">
         <mat-form-field>
           <mat-label>Email</mat-label>
-          <input
-            matInput
-            placeholder="user@domain.com"
-            formControlName="email"
-            required
-          />
+          <input matInput placeholder="user@domain.com" formControlName="email" required />
         </mat-form-field>
       </div>
 
-      <div>
+      <div class="form-field">
         <mat-form-field>
           <mat-label>Password</mat-label>
-          <input
-            type="password"
-            matInput
-            placeholder="Enter your password"
-            formControlName="password"
-            required
-          />
+          <input type="password" matInput placeholder="Enter your password" formControlName="password" required />
         </mat-form-field>
       </div>
     </form>
 
     <div class="additional-links">
-      <a [routerLink]="'/forgot-password'">Olvidó su contraseña?</a>
+      <a [routerLink]="'/forgot-password'">Forgot your password?</a>
     </div>
+
     <div class="additional-links">
-      ¿Aún no tiene una cuenta? <a [routerLink]="'/sign-up'">Crear una.</a>
+      Don't have an account yet? <a [routerLink]="'/sign-up'">Create one.</a>
     </div>
 
     <div *ngIf="errorMessage" class="error-message">
       {{ errorMessage }}
     </div>
-
 
     <mat-card-actions align="end">
       <button mat-button class="material-button" (click)="signIn()">Sign In</button>

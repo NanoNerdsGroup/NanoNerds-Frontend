@@ -1,5 +1,5 @@
-import {Component, OnInit} from '@angular/core';
-import {ShoppingCartService} from "../../services/shopping-cart.service";
+import { Component, OnInit } from '@angular/core';
+import { ShoppingCartService } from "../../services/shopping-cart.service";
 
 @Component({
   selector: 'app-shopping-cart',
@@ -7,21 +7,27 @@ import {ShoppingCartService} from "../../services/shopping-cart.service";
   styleUrls: ['./shopping-cart.component.css']
 })
 export class ShoppingCartComponent implements OnInit {
-  cartItems: any[] = []; // Definir la variable para almacenar los elementos del carrito
+  cartItems: any[] = [];
 
   constructor(private shoppingCartService: ShoppingCartService) {}
 
   ngOnInit() {
-    // Cargar los elementos del carrito al inicializar el componente
+    this.loadCartItems();
+  }
+
+  loadCartItems(): void {
     this.cartItems = this.shoppingCartService.getCartItems();
   }
 
   removeFromCart(item: any): void {
-    // Llama a la función removeFromCart del servicio ShoppingCartService
     this.shoppingCartService.removeFromCart(item);
-    // Actualiza la lista de elementos del carrito
-    this.cartItems = this.shoppingCartService.getCartItems();
+    this.loadCartItems();
   }
+
+  getTotalPrice(): number {
+    return this.cartItems.reduce((total, item) => total + item.price, 0);
+  }
+
   checkout(): void {
     // Lógica para realizar la compra
     // Puedes implementar aquí la interacción con tu sistema de compra

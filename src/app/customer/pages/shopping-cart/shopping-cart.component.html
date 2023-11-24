@@ -17,6 +17,7 @@
               <button (click)="removeFromCart(item)" class="p-button p-button-danger p-button-rounded p-card-title">
                 <i class="pi pi-trash"></i> Eliminar
               </button>
+
             </div>
           </div>
         </ng-container>
@@ -32,7 +33,9 @@
       </div>
     </ng-template>
 
+    Total: ${{ getTotalPrice() }}
     <div class="p-col-12 p-md-4">
+
       <button (click)="checkout()" class="p-button p-button-primary p-button-lg p-button-rounded p-button-block">
         Realizar Compra
       </button>

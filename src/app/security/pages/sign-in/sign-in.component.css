@@ -7,13 +7,13 @@
 }
 
 .signin-card {
-  width: 300px;
-  padding: 20px;
+  width: 400px;
+  padding: 30px;
   margin-right: 150px;
 }
 .image-container {
   flex: 1;
-  padding: 20px;
+  padding: 40px;
 }
 
 .image-container img {
@@ -28,3 +28,23 @@
 .error-message {
   color: red;
 }
+
+
+@media only screen and (max-width: 600px) {
+  .signin-card {
+    margin-right: 0; /* Eliminé el margen en pantallas pequeñas */
+  }
+
+  .container {
+    flex-direction: column; /* Cambié a dirección de columna en pantallas pequeñas */
+    text-align: center; /* Centré el texto en pantallas pequeñas */
+  }
+
+  .signin-card,
+  .image-container,
+  .signin-container {
+    width: 100%; /* Ancho al 100% en pantallas pequeñas */
+    margin: 0; /* Eliminé los márgenes en pantallas pequeñas */
+  }
+}
+
