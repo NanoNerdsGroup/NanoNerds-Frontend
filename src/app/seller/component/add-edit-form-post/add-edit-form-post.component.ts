@@ -35,17 +35,22 @@ export class AddEditFormPostComponent implements OnInit{
       type: ['', [Validators.required]],
       description: ['', [Validators.required]],
       amount: ['', [Validators.required]],
-      price: ['', [Validators.required]]
+      price: ['', [Validators.required]],
+      software: ['', [Validators.required]]
     });
     const currentUserJSON = localStorage.getItem('currentUser');
     this.user = JSON.parse(currentUserJSON ?? '{}');
     this.componentData = {} as any;
     this.dataSource = [];
   }
+
+
+
   filter(): void {
     const filterValue = this.input.nativeElement.value.toLowerCase();
     this.filteredOptions = this.options.filter(o => o.toLowerCase().includes(filterValue));
   }
+
   handleBlur(): void {
     const inputValue = this.input.nativeElement.value.toLowerCase();
     if (!this.options.map(option => option.toLowerCase()).includes(inputValue)) {
@@ -64,6 +69,7 @@ export class AddEditFormPostComponent implements OnInit{
       this.formAddComponent.get('amount')?.setValue(currentComponent.amount);
       this.formAddComponent.get('price')?.setValue(currentComponent.price);
       this.formAddComponent.get('description')?.setValue(currentComponent.description);
+      this.formAddComponent.get('software')?.setValue(currentComponent.software);
 
       this.componentData = currentComponent;
     }
@@ -91,6 +97,7 @@ export class AddEditFormPostComponent implements OnInit{
         this.componentData.description =this.formAddComponent.get('description')?.value;
         this.componentData.amount =this.formAddComponent.get('amount')?.value;
         this.componentData.price =this.formAddComponent.get('price')?.value;
+        this.componentData.software =this.formAddComponent.get('software')?.value;
         this.onElementUpdated(this.componentData);
       }else{
         const formattedDate = `${this.currentDate.getDate()}/${this.currentDate.getMonth() + 1}/${this.currentDate.getFullYear()}`;
@@ -104,6 +111,7 @@ export class AddEditFormPostComponent implements OnInit{
           manufacturer: this.formAddComponent.get('manufacturer')?.value,
           type: this.formAddComponent.get('type')?.value,
           amount: this.formAddComponent.get('amount')?.value,
+          software: this.formAddComponent.get('software')?.value,
         })
       }
     }

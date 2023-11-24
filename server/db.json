@@ -24,7 +24,11 @@
       "compatibility": "A estos modelos les podréis poner cualquier modelo de gráfica de gama alta que queráis, desde una AMD Radeon RX Vega 64, hasta una NVIDIA GeForce RTX 2080",
       "type": "targeta grafica",
       "software": "adobe photoshop",
+<<<<<<< HEAD
       "amount": 1
+=======
+      "amount": 12
+>>>>>>> b092866d3ca7ef2fe55825015ac44556885e5d74
     },
     {
       "id": 3,
@@ -48,6 +52,7 @@
       "manufacturer": "games",
       "compatibility": "A estos modelos les podréis poner cualquier modelo de gráfica de gama alta que queráis, desde una AMD Radeon RX Vega 64, hasta una NVIDIA GeForce RTX 2080",
       "type": "disco duro",
+<<<<<<< HEAD
       "software": "data storage"
     },
     {
@@ -72,6 +77,10 @@
       "type": "CPU",
       "amount": 1,
       "software": "linux"
+=======
+      "software": "data storage",
+      "amount": 3
+>>>>>>> b092866d3ca7ef2fe55825015ac44556885e5d74
     }
   ],
   "users": [
@@ -138,36 +147,6 @@
       "firstName": "Luis",
       "lastName": "Rodreiguez",
       "phoneNumber": "9548932"
-    }
-  ],
-  "posts": [
-    {
-      "id": 4,
-      "userId": 4,
-      "product": {
-        "name": "GeForce RTX 4071--54",
-        "amount": 20,
-        "brand": "Nvidia-344",
-        "unitPrice": 400,
-        "type": "GPU"
-      },
-      "date": "29/10/2023",
-      "photo": "https://ripleype.imgix.net/https%3A%2F%2Fdpq25p1ucac70.cloudfront.net%2Fseller-place-files%2Fmrkl-files%2F422%2FMARKETPLACE%20INTERNACIONAL%2FOTROS%2FUF06163_1.jpg?w=750&h=555&ch=Width&auto=format&cs=strip&bg=FFFFFF&q=60&trimcolor=FFFFFF&trim=color&fit=fillmax&ixlib=js-1.1.0&s=346fc8b7f95d6028c2cd5c6ea957b2f5",
-      "description": "El mejor producto del mundo y "
-    },
-    {
-      "id": 5,
-      "userId": 4,
-      "product": {
-        "name": "Intel i9 procesador",
-        "amount": 15,
-        "brand": "Intel",
-        "unitPrice": 2000,
-        "type": "CPU"
-      },
-      "date": "29/10/2023",
-      "description": "El mejor procesador",
-      "photo": "https://leasein.pe/wp-content/uploads/2021/08/Intel-Core-i9-2.jpg"
     }
   ]
 }
